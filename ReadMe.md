@@ -1,5 +1,5 @@
-Integer Prime Factors Command Line Processor
---------------------------------------------
+Prime Factors Command Line Processor
+------------------------------------
 
 A simple command line program built to achieve the following goals:
 
