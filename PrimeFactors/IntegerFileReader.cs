@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace PrimeFactors
 {
+    /// <summary>
+    /// Interface for abstracting the reading of the integer file.
+    /// </summary>
     public class IntegerFileReader : IIntegerReader
     {
         private string _path;
@@ -21,17 +24,15 @@ namespace PrimeFactors
             _path = path;
         }
 
-        private void Initialize()
-        {
-            if (_reader == null)
-            {
-                _reader = new StreamReader(_path);
-            }
-        }
-
+        /// <summary>
+        /// Create the reader and attempt to read the next available integer.
+        /// </summary>
+        /// <returns>
+        /// The read integer value or null if the end of file is reached.
+        /// </returns>
         public int? ReadNext()
         {
-            Initialize();
+            _reader = _reader ?? new StreamReader(_path);
             
             int number = 0;
             string line;
@@ -46,6 +47,9 @@ namespace PrimeFactors
             return null;
         }
 
+        /// <summary>
+        /// Dispose of the file resources.
+        /// </summary>
         public void Dispose()
         {
             Dispose(true);
