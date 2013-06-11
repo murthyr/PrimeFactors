@@ -25,7 +25,7 @@ namespace PrimeFactors
 
             // Go up through the candidates, while reducing the number we are finding prime factors for. 
             // Worst case will be a large prime, but even in this case it shouldn't be worse than O(n)
-            for (int candidate = 2; candidate <= number; candidate++)
+            for (int candidate = 2; candidate <= number && candidate > 0; candidate++)
             {
                 while (number % candidate == 0)
                 {
