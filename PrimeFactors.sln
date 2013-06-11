@@ -5,7 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeFactors", "PrimeFactor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeFactors.Tests", "PrimeFactors.Tests\PrimeFactors.Tests.csproj", "{02D46E55-671C-4C7D-8718-607272A2D51D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeFactors.VSTests", "PrimeFactors.VSTests\PrimeFactors.VSTests.csproj", "{412563D2-573B-4FA8-9E3D-7A95C913D84C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8AD780B6-15A4-482C-B27F-00B1B116E30D}"
+	ProjectSection(SolutionItems) = preProject
+		ReadMe.md = ReadMe.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,10 +24,6 @@ Global
 		{02D46E55-671C-4C7D-8718-607272A2D51D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02D46E55-671C-4C7D-8718-607272A2D51D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02D46E55-671C-4C7D-8718-607272A2D51D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{412563D2-573B-4FA8-9E3D-7A95C913D84C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{412563D2-573B-4FA8-9E3D-7A95C913D84C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{412563D2-573B-4FA8-9E3D-7A95C913D84C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{412563D2-573B-4FA8-9E3D-7A95C913D84C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

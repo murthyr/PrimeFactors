@@ -11,6 +11,8 @@
     <AssemblyName>PrimeFactors.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,6 +32,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Moq">
+      <HintPath>..\packages\Moq.4.0.10827\lib\NET40\Moq.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.2.6.2\lib\nunit.framework.dll</HintPath>
     </Reference>
@@ -42,8 +47,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArgumentValidationTests.cs" />
+    <Compile Include="ConsoleLoggerTests.cs" />
     <Compile Include="FactorizationCalculatorTests.cs" />
+    <Compile Include="IntegerFileReaderTests.cs" />
+    <Compile Include="IntegrationTests.cs" />
+    <Compile Include="PrimeFactorCalculatorTests.cs" />
+    <Compile Include="PrimeFactorExceptionLoggerTests.cs" />
+    <Compile Include="PrimeFactorOutputWriterTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TempFileHelpers.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

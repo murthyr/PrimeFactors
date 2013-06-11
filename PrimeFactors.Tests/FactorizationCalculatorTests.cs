@@ -1,9 +1,7 @@
-﻿using NUnit.Framework;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using NUnit.Framework;
 
 namespace PrimeFactors.Tests
 {
@@ -17,7 +15,7 @@ namespace PrimeFactors.Tests
         [Test]
         public void Test_For_One()
         {
-            CollectionAssert.AreEqual(FactorizationCalculator.Calculate(1).ToList(), new List<int>() { });
+            CollectionAssert.AreEqual(FactorizationCalculator.Calculate(1), new List<int>() { });
         }
 
         [Test]
@@ -47,7 +45,7 @@ namespace PrimeFactors.Tests
         [Test]
         public void Test_For_Six()
         {
-            CollectionAssert.AreEqual(FactorizationCalculator.Calculate(6), new List<int>() { 3, 2 });
+            CollectionAssert.AreEqual(FactorizationCalculator.Calculate(6), new List<int>() { 2, 3 });
         }
 
         [Test]
